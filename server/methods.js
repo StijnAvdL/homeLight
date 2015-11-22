@@ -8,9 +8,10 @@ var displayError = function(err) {
 
 Meteor.methods({
 	setLightOn: function(on) {
-	api.setLightState(2, {"on": on})
-		.then(displayResult)
-		.fail(displayError)
-		.done();
+		api.setLightState(2, {"on": on})
+			.then(displayResult)
+			.fail(displayError)
+			.done();
+		}
 	}
-});
+);
